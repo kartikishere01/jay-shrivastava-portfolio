@@ -9,11 +9,11 @@ const config: Config = {
     extend: {
       colors: {
         dark: {
-          bg: '#0a0a0a',
-          card: '#1a1a1a',
-          border: '#2a2a2a',
-          text: '#f5f5f5',
-          muted: '#808080',
+          bg: '#252422',
+          card: '#312f2b',
+          border: '#4a453d',
+          text: '#ede8df',
+          muted: '#b0a89b',
         }
       },
       fontFamily: {

@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import SmoothScroll from '@/components/SmoothScroll'
-import CustomCursor from '@/components/CustomCursor'
 import Footer from '@/components/Footer'
+import Preloader from '@/components/Preloader'
 
 export const metadata: Metadata = {
-  title: 'Jay Shrivastava - Architecture & Design',
+  title: 'adze&axis - Architecture & Design',
   description: 'Award-winning architecture and design studio',
 }
 
@@ -16,11 +16,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className="bg-dark-bg text-dark-text">
         <SmoothScroll>
+          <Preloader />
           <Navigation />
-          <CustomCursor />
           {children}
           <Footer />
         </SmoothScroll>
